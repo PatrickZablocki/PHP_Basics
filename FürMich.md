@@ -39,57 +39,36 @@
 
 
 ### Fragen & Antworten
-1.
+### 1. Was bedeuten `<?php` und `?>`?
 
-Was bedeutet : <?php & ?>
+**Antwort:**
+PHP-Code beginnt und endet mit `<?php` und `?>`.
 
-Antwort : PHP-Code beginnt und endet mit <?php und ?>.
+### 2. Was bedeutet : if ($_SERVER["REQUEST_METHOD"] == "POST") { in meinem Code?
 
-2.
-
-Was bedeutet : if ($_SERVER["REQUEST_METHOD"] == "POST") { in meinem Code?
-
-Antwort: 
+**Antwort:** 
 Überprüft, ob die Anfrage mit der HTTP-POST-Methode gesendet wurde.
 $_SERVER ist ein Superglobales Array, das Server- und Ausführungsumgebungsinformationen enthält.
 $_SERVER["REQUEST_METHOD"] gibt die Methode zurück, mit der die Seite angefordert wurde (z. B. "POST" oder "GET").
 
-3.
+### 3. Was bedeutet in meinem Code? $name = htmlspecialchars($_POST['name']); $email = htmlspecialchars $message = htmlspecialchars($_POST['message']);($_POST['email']);
 
-Was bedeutet in meinem Code: 
-$name = htmlspecialchars($_POST['name']);
-$email = htmlspecialchars($_POST['email']);
-$message = htmlspecialchars($_POST['message']);
-??
-
-Antwort : 
+**Antwort:** 
 
 $_POST ist ein Superglobales Array, das die Daten enthält, die per HTTP-POST-Methode gesendet wurden.
 htmlspecialchars() konvertiert spezielle Zeichen in HTML-Entities, um XSS-Angriffe zu verhindern.
 Beispiel: < wird zu &lt;, > wird zu &gt;, etc.
 
-4.
+### 4. Was bedeutet in meinem Code: echo "Name: $name<br>"; echo "E-Mail: $email<br>"; echo "Nachricht: $message<br>";
 
-Was bedeutet in meinem Code:
-
-echo "Name: $name<br>";
-echo "E-Mail: $email<br>";
-echo "Nachricht: $message<br>";
-
-Antwort:
+**Antwort:**
 
 echo gibt eine Zeichenkette aus.
 <br> ist ein HTML-Zeilenumbruch, der dafür sorgt, dass die nächste Ausgabe in einer neuen Zeile erscheint.
 
-5.
+### 5.Was bedeutet in meinem Code: } else { echo "Formular wurde nicht korrekt abgeschickt."; }
 
-Was bedeutet in meinem Code:
-
-} else {
-    echo "Formular wurde nicht korrekt abgeschickt.";
-}
-
-Antwort:
+**Antwort:**
 
 Wenn die Anfrage nicht per POST erfolgt ist, wird eine Fehlermeldung ausgegeben.
 
